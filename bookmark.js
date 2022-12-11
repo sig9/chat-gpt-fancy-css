@@ -90,7 +90,7 @@ javascript:(function() {
       )
     .replace(/<button[^>]*>.*?<\/button>/g, '')
     .replace(/<svg[^>]*>.*?<\/svg>/g, '<h3 class="bot">Bot</h3>') + '</body></html>'], {type: 'text/html'}));
-    a.download = 'chatGPT.html';
+    a.download = 'prompt('Enter filename');
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
